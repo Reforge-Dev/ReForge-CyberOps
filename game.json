@@ -1,0 +1,8 @@
+{
+  "meta": { "title": "Ghost in the Machine", "version": 1, "startScene": "network", "theme": "terminal" },
+  "variables": {},
+  "entityTypes": {},
+  "scenes": [ { "id": "network", "size": [640, 360], "entities": [] } ],
+  "rules": [],
+  "ui": []
+}

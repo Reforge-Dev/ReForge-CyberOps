@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ghost in the Machine</title>
+  <link rel="stylesheet" href="vendor/reforge-engine.css" />
+  <link rel="stylesheet" href="theme.css" />
+</head>
+<body>
+  <canvas id="game"></canvas>
+  <script type="module">
+    // The ONLY script in this repo: the game itself is game.json.
+    import { createGame } from "./vendor/reforge-engine.js";
+    const res = await fetch("game.json");
+    createGame(await res.json(), document.getElementById("game"), { assetBase: "./" }).start();
+  </script>
+</body>
+</html>
